@@ -16,6 +16,7 @@ export class StudentController {
   @Get()
   getAllStudents() {
     return this.studentService.getStudents();
+    
   }
 
   @Get(':index')
