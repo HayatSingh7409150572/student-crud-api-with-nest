@@ -14,9 +14,10 @@ export class StudentController {
   constructor(private studentService: StudentService) {}
 
   @Get()
+  
   getAllStudents() {
     return this.studentService.getStudents();
-    
+
   }
 
   @Get(':index')
